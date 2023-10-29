@@ -39,17 +39,17 @@ function View() {
   return (
     <>
     {editclick&&
-      <div className='w-100 d-flex justify-content-center mt-24 mb-10'>
-    <table className='table text-center w-2/4 shadow  bg-green-900 rounded border-gray-950 text-light'>
+      <div className='w-full flex justify-center mt-24 mb-10'>
+    <table className=' table text-center w-2/4 shadow  bg-green-900 rounded border-gray-950 text-light'>
       <tr>
-        <th>Old Task Name</th>
-        <th>New Task Name</th>
+        <th>Old</th>
+        <th>New</th>
         <th></th>
       </tr>
       <tr>
         <td>{oldval}</td>
-        <td><input onChange={(e)=>handlenewvalue(e.target.value)} type="text" placeholder='Enter New Task Name' className='w-60 bg-stone-800 tex-light border border-blue-500' /></td>
-        <td><button onClick={handlechanges} className='btn btn-primary'>Save Changes</button></td>
+        <td><input onChange={(e)=>handlenewvalue(e.target.value)} type="text" placeholder='Enter New Task Name' className=' h-12 bg-stone-800 tex-light border border-blue-500' /></td>
+        <td><button onClick={handlechanges} className='btn btn-primary h-12'>Save</button></td>
       </tr>
       </table>
     </div>}
